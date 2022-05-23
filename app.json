@@ -1,0 +1,85 @@
+{
+    "name": "سورس نوفا ميوزك",
+    "description": "تشغيل الاغاني في المجموعات",
+    "logo": "https://te.legra.ph/file/46fa55b49b85c084159ce.jpg",
+    "keywords": [
+        "py-tgcalls",
+        "telegram bot",
+        "video stream",
+        "live stream",
+        "music stream",
+        "mongodb",
+        "pyrogram"
+    ],
+    "website": "https://t.me/TmNova",
+    "repository": "https://github.com/Tm-Nova/RR8R9",
+    "success_url": "https://t.me/G_W_P",
+    "env": {
+     "API_ID": {
+            "description": "ضع الايبي ايدي",
+            "required": true,
+            "value": "15540963"
+        },
+     "API_HASH": {
+            "description": "ضع الايبي هاش مثل",
+            "required": true,
+            "value": "08a6f26afe4ce816e7fb3115cb8cac83"
+        },
+        "BOT_TOKEN": {
+            "description": "ضع توكن البوت",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "@ ضع معرف البوت بدون",
+            "required": true
+        },
+        "SESSION_NAME": {
+            "description": "ضع كود الجلسه",
+            "required": true
+        },
+        "MONGODB_URL": {
+            "description": "ضع قاعدة البيانات او المنجو ، لو معندكش سيب ده",
+            "required": true,
+            "value": "mongodb+srv://vro:vro@cluster0.eyy25.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+        },
+        "SUDO_USERS": {
+            "description": "سيبها زي مهيا اوعا تبعبص",
+            "required": true,
+            "value": "5125194988"
+        },
+        "OWNER_ID": {
+            "description": "ضع ايدي مالك البوت",
+            "required": true,
+            "value": "5125194988"
+        },
+        "OWNER_USERNAME": {
+            "description": "@ ضع معرف المطور بدون",
+            "required": true,
+            "value": "G_W_P"
+        },
+        "ALIVE_NAME": {
+            "description": "سيبها كدا زي مهيا اوعا تبعبص",
+            "required": true,
+            "value": "Nova To Play Song"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
