@@ -77,7 +77,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+    command(["استارت", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 @check_blacklist()
 async def start_(c: Client, message: Message):
@@ -200,7 +200,7 @@ async def new_chat(c: Client, m: Message):
             if member.id == me_bot.id:
                 return await m.reply(
                     "⌯ شكرا لإضافتي إلى المجموعه\n"  
-               "⌯ قم بترقيتي مشرف في الجروب ، وإلا فلن أتمكن من العمل بشكل صحيح\n"
+               "⌯ قم بترقيتي مشرف في الجروب\n"
              "⌯ للتحكم في البوت اضغط على زر الاوامر بالقائمه بالاسفل",
                     reply_markup=InlineKeyboardMarkup(
                         [
