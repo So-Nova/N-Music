@@ -124,7 +124,7 @@ async def alive(c: Client, message: Message):
     text = f"**⌯ اهلا بك انت الان في قائمه الاوامر لـ استخدام الاوامر عليك التحكم بالقائمه بالاسفل ↡**"
     await c.send_photo(
         chat_id,
-        photo=f"https://te.legra.ph/file/402c519808f75bd9b1803.jpg",
+        photo=f"https://telegra.ph/file/f7d70b0bbf3d81ed90c61.mp4",
         caption=text,
         reply_markup=buttons,
     )
@@ -145,7 +145,7 @@ async def uott(client: Client, message: Message):
     developer = f"⌯ اهلا بك انت الان في قائمه مبرمج السورس لـ التواصل عليك التحكم بالقائمه بالاسفل ↡"
 
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/402c519808f75bd9b1803.jpg",
+        photo=f"https://telegra.ph/file/22db6a771af8fa9086142.jpg",
         caption=developer,
         reply_markup=keyboard, 
     )
