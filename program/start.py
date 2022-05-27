@@ -145,7 +145,7 @@ async def uott(client: Client, message: Message):
     developer = f"⌯ اهلا بك انت الان في قائمه مبرمج السورس لـ التواصل عليك التحكم بالقائمه بالاسفل ↡"
 
     await message.reply_photo(
-        photo=f"https://i.postimg.cc/Ghhk1MW8/IMG-20220210-205404-875.jpg",
+        photo=f"https://te.legra.ph/file/402c519808f75bd9b1803.jpg",
         caption=developer,
         reply_markup=keyboard, 
     )
