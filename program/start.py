@@ -77,7 +77,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["استارت", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+    command(["ستارت", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 @check_blacklist()
 async def start_(c: Client, message: Message):
@@ -145,7 +145,7 @@ async def uott(client: Client, message: Message):
     developer = f"⌯ اهلا بك انت الان في قائمه مبرمج السورس لـ التواصل عليك التحكم بالقائمه بالاسفل ↡"
 
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/402c519808f75bd9b1803.jpg",
+        photo=f"https://i.postimg.cc/Ghhk1MW8/IMG-20220210-205404-875.jpg",
         caption=developer,
         reply_markup=keyboard, 
     )
