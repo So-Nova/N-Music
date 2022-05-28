@@ -95,7 +95,7 @@ async def pause(client, m: Message):
             await calls.pause_stream(chat_id)
             await music_off(chat_id)
             await m.reply_text(
-                "⏸ **تم الايقاف ...**\n\n• **لاستمرار الاغنية اكتب**\n⌯ كمل"
+                "⏸ **تم الايقاف ...**\n\n⌯ **لاستمرار الاغنية اكتب**\n⌯ كمل"
             )
         except Exception as e:
             traceback.print_exc()
@@ -118,7 +118,7 @@ async def resume(client, m: Message):
             await calls.resume_stream(chat_id)
             await music_on(chat_id)
             await m.reply_text(
-                "▶️ **تم التشغيل ...**\n\n• **لايقاف الأغنية اكتب**\n⌯ اسكت"
+                "▶️ **تم التشغيل ...**\n\n⌯ **لايقاف الأغنية اكتب**\n⌯ اسكت"
             )
         except Exception as e:
             traceback.print_exc()
