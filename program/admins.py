@@ -56,7 +56,7 @@ async def update_admin(client, message: Message):
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
     await message.reply_text(
-        "⌯ تم اعادة **تشغيل البوت** \n⌯ وتم **تحديث** قائمة **المشرفين**"
+        "⌯ تم اعادة **تشغيل البوت** \n⌯ تم **تحديث** قائمة **المشرفين**"
     )
 
 
