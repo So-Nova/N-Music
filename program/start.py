@@ -106,7 +106,7 @@ async def start_(c: Client, message: Message):
 
 
 @Client.on_message(
-    command(["لاوامر", "وامر الاغاني", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["وامر نوفا", "وامر الاغاني", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
 )
 @check_blacklist()
 async def alive(c: Client, message: Message):
