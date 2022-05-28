@@ -124,7 +124,7 @@ async def alive(c: Client, message: Message):
     text = f"**⌯ اهلا بك انت الان في قائمه الاوامر لـ استخدام الاوامر عليك التحكم بالقائمه بالاسفل ↡**"
     await c.send_photo(
         chat_id,
-        photo=f"https://telegra.ph/file/f7d70b0bbf3d81ed90c61.mp4",
+        photo=f"https://telegra.ph/file/c6cc20e377eb6c0f33b07.jpg",
         caption=text,
         reply_markup=buttons,
     )
