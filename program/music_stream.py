@@ -85,7 +85,7 @@ async def play_tg_file(c: Client, m: Message, replied: Message = None, link: str
             return await m.reply_text(f"🚫 error:\n\n» {e}")
     if not replied:
         return await m.reply(
-            "⌯ الرد على ملف صوتي او اكتب ، الاوامر لمعرفة استخدام البوت "
+            "⌯ الرد على ملف صوتي او اكتب ، اوامر الاغاني لمعرفة استخدام البوت "
         )
     if replied.audio or replied.voice:
         if not link:
@@ -178,7 +178,7 @@ async def play_tg_file(c: Client, m: Message, replied: Message = None, link: str
                 LOGS.info(e)
     else:
         await m.reply_text(
-            "⌯ الرد على ملف صوتي او اكتب ، الاوامر لمعرفة استخدام البوت "
+            "⌯ الرد على ملف صوتي او اكتب ، اوامر الاغاني لمعرفة استخدام البوت "
         )
 
 
@@ -238,7 +238,7 @@ async def audio_stream(c: Client, m: Message):
         else:
             if len(m.command) < 2:
                 await m.reply(
-                    "⌯ الرد على ملف صوتي او اكتب ، الاوامر لمعرفة استخدام البوت "
+                    "⌯ الرد على ملف صوتي او اكتب ، اوامر الاغاني لمعرفة استخدام البوت "
                 )
             else:
                 suhu = await c.send_message(chat_id, "⌯ جاري البحث...")
@@ -375,7 +375,7 @@ async def audio_stream(c: Client, m: Message):
                         except (NoActiveGroupCall, GroupCallNotFound):
                             await suhu.delete()
                             await remove_active_chat(chat_id)
-                            await m.reply_text("⌯ مفيش كول شغل اصلا يكفيفيف عشان اشغل\n\n⌯ اكتب ، اطلع وحاول مره أخرى")
+                            await m.reply_text("⌯ مفيش كول شغل اصلا يكفيفف عشان اشغل\n\n⌯ اكتب ، اطلع وحاول مره أخرى")
                         except NoAudioSourceFound:
                             await suhu.delete()
                             await remove_active_chat(chat_id)
