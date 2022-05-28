@@ -159,7 +159,7 @@ async def skip(c: Client, m: Message):
 
 
 @Client.on_message(
-    command(["تم", f"mute@{BOT_USERNAME}", "vmute"]) & other_filters
+    command(["كتم", f"mute@{BOT_USERNAME}", "vmute"]) & other_filters
 )
 @authorized_users_only
 @check_blacklist()
@@ -182,7 +182,7 @@ async def mute(client, m: Message):
 
 
 @Client.on_message(
-    command(["لغاء الكتم", f"unmute@{BOT_USERNAME}", "vunmute"]) & other_filters
+    command(["الغاء الكتم", f"unmute@{BOT_USERNAME}", "vunmute"]) & other_filters
 )
 @authorized_users_only
 @check_blacklist()
