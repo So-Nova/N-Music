@@ -18,12 +18,12 @@
      "API_ID": {
             "description": "ضع الايبي ايدي",
             "required": true,
-            "value": "15540963"
+            "value": "11174745"
         },
      "API_HASH": {
             "description": "ضع الايبي هاش مثل",
             "required": true,
-            "value": "08a6f26afe4ce816e7fb3115cb8cac83"
+            "value": "364a3329a7dc1fa55f8d59229e62b65e"
         },
         "BOT_TOKEN": {
             "description": "ضع توكن البوت",
