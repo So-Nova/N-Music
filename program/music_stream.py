@@ -310,7 +310,7 @@ async def audio_stream(c: Client, m: Message):
     else:
         if len(m.command) < 2:
             await m.reply(
-                "⌯ الرد على ملف صوتي او اكتب ، الاوامر لمعرفة استخدام البوت "
+                 "⌯ الرد على ملف صوتي او اكتب ، اوامر الاغاني لمعرفة استخدام البوت "
             )
         elif "t.me" in m.command[1]:
             for i in m.command[1:]:
