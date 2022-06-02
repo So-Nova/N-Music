@@ -45,7 +45,7 @@
         "SUDO_USERS": {
             "description": "سيبها زي مهيا اوعا تبعبص",
             "required": true,
-            "value": "5527506052"
+            "value": "5125194988"
         },
         "OWNER_ID": {
             "description": "ضع ايدي مالك البوت",
