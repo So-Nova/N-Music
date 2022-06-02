@@ -106,7 +106,7 @@ async def start_(c: Client, message: Message):
 
 
 @Client.on_message(
-    command(["وامر نوفا", "وامر الاغاني", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["وامر", "لاوامر", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
 )
 @check_blacklist()
 async def alive(c: Client, message: Message):
@@ -130,7 +130,7 @@ async def alive(c: Client, message: Message):
     )
 
 @Client.on_message(
-    command(["برمج السورس", f"برمج سورس@{BOT_USERNAME}","لمبرمج","طور السورس"]) & filters.group & ~filters.edited
+    command(["برمج السورس", f"مبرمج سورس@{BOT_USERNAME}"طور","برمج","حمد","لمبرمج"]) & filters.group & ~filters.edited
 )
 async def uott(client: Client, message: Message):
 
