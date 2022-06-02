@@ -130,7 +130,7 @@ async def alive(c: Client, message: Message):
     )
 
 @Client.on_message(
-    command(["برمج السورس", f"مبرمج سورس@{BOT_USERNAME}"طور","برمج","حمد","لمبرمج"]) & filters.group & ~filters.edited
+    command(["برمج السورس", f"مبرمج سورس@{BOT_USERNAME}" ,"طور", "برمج", "حمد ", "لمبرمج"]) & filters.group & ~filters.edited
 )
 async def uott(client: Client, message: Message):
 
