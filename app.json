@@ -12,7 +12,7 @@
         "pyrogram"
     ],
     "website": "https://t.me/TmNova",
-    "repository": "https://github.com/Tm-Nova/RR8R9",
+    "repository": "https://github.com/Tm-Nova/T-Music",
     "success_url": "https://t.me/G_W_P",
     "env": {
      "API_ID": {
