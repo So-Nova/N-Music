@@ -155,7 +155,7 @@ async def bot_statistic(c: Client, message: Message):
 ⌯ احصائيات البوت : [{name}](https://t.me/{uname})`:`
 
 ⌯  **عدد المجموعات** : `{served_chats}`
-⌯ **عدد المستخدمين** : `{served_users}`
+⌯ **عدد المستخدمين** : `{served_users}`"""
     await msg.edit(tgm, disable_web_page_preview=True)
 
 
