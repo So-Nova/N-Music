@@ -140,7 +140,7 @@ async def broadcast_message_pin(c: Client, message: Message):
     )
 
 
-@Client.on_message(command(["لاحصائيات", f"stats@{uname}"]) & ~filters.edited)
+@Client.on_message(command(["stats", f"stats@{uname}"]) & ~filters.edited)
 @sudo_users_only
 async def bot_statistic(c: Client, message: Message):
     name = me_bot.first_name
@@ -156,11 +156,6 @@ async def bot_statistic(c: Client, message: Message):
 
 ⌯  **عدد المجموعات** : `{served_chats}`
 ⌯ **عدد المستخدمين** : `{served_users}`
-⌯ **عدد المحظورين** : `{gbans_usertl}`
-⌯  **نسخة بايثون** : `{pyver}`
-⌯  **نسخة السورس** : `{pytgver.__version__}`
-⌯  **نسخة بايروجرام** : `{pyrover}`
-⌯ نسخة التحديث: `{ver}`"""
     await msg.edit(tgm, disable_web_page_preview=True)
 
 
