@@ -45,7 +45,7 @@ from pyrogram.types import (
 )
 
 
-@Client.on_message(command(["حديث", "يستارت"]) & other_filters)
+@Client.on_message(command(["نصيب"]) & other_filters)
 @authorized_users_only
 @check_blacklist()
 async def update_admin(client, message: Message):
