@@ -18,12 +18,12 @@
      "API_ID": {
             "description": "ضع الايبي ايدي",
             "required": true,
-            "value": "11174745"
+            "value": "542621"
         },
      "API_HASH": {
             "description": "ضع الايبي هاش مثل",
             "required": true,
-            "value": "364a3329a7dc1fa55f8d59229e62b65e"
+            "value": "8861373ab997c12dc884ee76fdfd4bd7"
         },
         "BOT_TOKEN": {
             "description": "ضع توكن البوت",
@@ -50,12 +50,12 @@
         "OWNER_ID": {
             "description": "ضع ايدي مالك البوت",
             "required": true,
-            "value": "5125194988"
+            "value": "5527506052"
         },
         "OWNER_USERNAME": {
             "description": "@ ضع معرف المطور بدون",
             "required": true,
-            "value": "G_W_P"
+            "value": "YeYeYc"
         },
         "ALIVE_NAME": {
             "description": "سيبها كدا زي مهيا اوعا تبعبص",
@@ -78,7 +78,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "free"
+            "size": "Eco"
         }
     },
     "stack": "container"
