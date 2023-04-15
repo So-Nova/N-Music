@@ -77,7 +77,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["ستارت", f"start@{BOT_USERNAME}","/start"]) & filters.private & ~filters.edited
+    command(["ستارت", f"start@{BOT_USERNAME}","start"]) & filters.private & ~filters.edited
 )
 @check_blacklist()
 async def start_(c: Client, message: Message):
@@ -130,14 +130,14 @@ async def alive(c: Client, message: Message):
     )
 
 @Client.on_message(
-    command(["برمج السورس", f"مبرمج سورس@{BOT_USERNAME}" ,"طور", "برمج ", "لمبرمج"]) & filters.group & ~filters.edited
+    command(["برمج السورس", f"dev" ,"طور", "برمج ", "لمبرمج"]) & filters.group & ~filters.edited
 )
 async def uott(client: Client, message: Message):
 
     keyboard = reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("مبرمج السورس", url=f"https://t.me/YeYeYc"),
+                            InlineKeyboardButton("𖥻 UR , FaV MoHaMeD .", url=f"https://t.me/YeYeYc"),
                         ]
                     ]
                 )
