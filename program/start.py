@@ -77,7 +77,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["ستارت", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+    command(["ستارت", f"start@{BOT_USERNAME}","/start"]) & filters.private & ~filters.edited
 )
 @check_blacklist()
 async def start_(c: Client, message: Message):
@@ -106,7 +106,7 @@ async def start_(c: Client, message: Message):
 
 
 @Client.on_message(
-    command(["وامر الاغاني","وامر اغاني", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["وامر الاغاني","وامر نوفا", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
 )
 @check_blacklist()
 async def alive(c: Client, message: Message):
@@ -137,7 +137,7 @@ async def uott(client: Client, message: Message):
     keyboard = reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("مبرمج السورس", url=f"https://t.me/G_W_P"),
+                            InlineKeyboardButton("مبرمج السورس", url=f"https://t.me/YeYeYc"),
                         ]
                     ]
                 )
@@ -145,7 +145,7 @@ async def uott(client: Client, message: Message):
     developer = f"⌯ اهلا بك انت الان في قائمه مبرمج السورس لـ التواصل عليك التحكم بالقائمه بالاسفل ↡"
 
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/22db6a771af8fa9086142.jpg",
+        photo=f"https://telegra.ph/file/f331ef20db2d7f5469360.jpg",
         caption=developer,
         reply_markup=keyboard, 
     )
