@@ -91,13 +91,13 @@ async def global_banned(c: Client, message: Message):
     user_id = message.reply_to_message.from_user.id
     mention = message.reply_to_message.from_user.mention
     BOT_ID = me_bot.id
-    if user.id == from_user_id:
+    if user_id == from_user_id:
         await message.reply_text("⌯ لا يمكنك حظر نفسك")
-    elif user.id == BOT_ID:
+    elif user_id == BOT_ID:
         await message.reply_text("⌯ لا يمكنك حظر البوت")
-    elif user.id in SUDO_USERS:
+    elif user_id in SUDO_USERS:
         await message.reply_text("⌯ لا يمكنك استخدام الامر علي المطور الاساسي²")
-    elif user.id in OWNER_ID:
+    elif user_id in OWNER_ID:
         await message.reply_text("⌯ لا يمكنك استخدام الامر علي مطور البوت")
     else:
         is_gbanned = await is_gbanned_user(user_id)
@@ -188,9 +188,9 @@ async def ungban_global(c: Client, message: Message):
     user_id = message.reply_to_message.from_user.id
     mention = message.reply_to_message.from_user.mention
     BOT_ID = me_bot.id
-     if user.id == from_user.id:
+    if user_id == from_user.id:
         await message.reply_text("You can't ungban yourself because you can't be gbanned !")
-    elif user.id == BOT_ID:
+    elif user_id == BOT_ID:
         await message.reply_text("I can't ungban myself because i can't be gbanned !")
     elif user_id in SUDO_USERS:
         await message.reply_text("Sudo users can't be gbanned/ung")
