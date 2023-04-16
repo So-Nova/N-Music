@@ -32,7 +32,7 @@ from driver.database.dbpunish import add_gban_user, is_gbanned_user, remove_gban
 from config import OWNER_ID, SUDO_USERS, BOT_USERNAME as bn
 
 
-@Client.on_message(command(["gban", f"gban@{bn}","ظر"]) & other_filters)
+@Client.on_message(command(["gban","حظر","gban@{bn}"]) & other_filters)
 @bot_creator
 async def global_banned(c: Client, message: Message):
     BOT_NAME = me_bot.first_name
@@ -137,7 +137,7 @@ async def global_banned(c: Client, message: Message):
             return
 
 
-@Client.on_message(command(["ungban", f"ungban@{bn}","فك الحظر"]) & other_filters)
+@Client.on_message(command(["ungban","لغاء الحظر","ungban@{bn}"]) & other_filters)
 @bot_creator
 async def ungban_global(c: Client, message: Message):
     chat_id = message.chat.id
