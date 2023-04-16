@@ -14,7 +14,7 @@ SESSION_NAME = getenv("SESSION_NAME")
 OWNER_USERNAME = getenv("OWNER_USERNAME")
 ALIVE_NAME = getenv("ALIVE_NAME")
 BOT_USERNAME = getenv("BOT_USERNAME")
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/So-Nova/iMusic")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/So-Nova/So-Music")
 UPSTREAM_BRANCH = getenv("UPSTREM_BRANCH", "main")
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "60"))
 GROUP_SUPPORT = getenv("GROUP_SUPPORT", "GhNova")
@@ -22,7 +22,7 @@ UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "TmNova")
 
 # database, decorators, handlers mandatory vars
 MONGODB_URL = getenv("MONGODB_URL")
-COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "ت ا ش و ك ر غ ب ف م / ! . $").split())
+COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "ح ت ا ش و ك ر غ ب ف م / ! . $").split())
 OWNER_ID = list(map(int, getenv("OWNER_ID").split()))
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 
