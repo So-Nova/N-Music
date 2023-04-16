@@ -140,7 +140,7 @@ async def broadcast_message_pin(c: Client, message: Message):
     )
 
 
-@Client.on_message(command(["stats", f"stats@{uname}"]) & ~filters.edited)
+@Client.on_message(command(["stats", f"stats@{uname}","لاحصائيات"]) & ~filters.edited)
 @sudo_users_only
 async def bot_statistic(c: Client, message: Message):
     name = me_bot.first_name
