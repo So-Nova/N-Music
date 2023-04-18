@@ -39,8 +39,8 @@ from config import (
 async def start_set(_, query: CallbackQuery):
     await query.answer("home start")
     await query.edit_message_text(
-        f"""⌯ مرحبا [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) ،\n
-⌯ انا بوت بمميزات متعدده لتشغيل الاغاني في المجموعات
+        f"""⌯ مرحبا [{query.message.chat.first_name}](tg://user?id={query.message.chat.id})\n
+⌯ انا بوت نوفا ميوزك لتشغيل الاغاني في المجموعات
 ⌯ Ch : [Source Nova](http://t.me/TmNova)
 """,
         reply_markup=InlineKeyboardMarkup(
@@ -91,7 +91,7 @@ async def commands_set(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""
 ⌯ اهلا بك انت الان في قائمه الاوامر 
-⌯ لـ استخدام الاوامر عليك التحكم بالقائمه بالاسفل↡
+⌯ لـ استخدام الاوامر عليك التحكم بالقائمه بالاسفل ↡
 """,
         reply_markup=InlineKeyboardMarkup(
             [
