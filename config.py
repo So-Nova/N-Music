@@ -22,7 +22,7 @@ UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "TmNova")
 
 # database, decorators, handlers mandatory vars
 MONGODB_URL = getenv("MONGODB_URL")
-COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "ح ت ا ش و ك ر غ ب ن ف م / ! . $").split())
+COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "ح ت ا ش و ك ر غ ب ف م / ! . $").split())
 OWNER_ID = list(map(int, getenv("OWNER_ID").split()))
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 
