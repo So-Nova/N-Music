@@ -150,6 +150,36 @@ async def uott(client: Client, message: Message):
         reply_markup=keyboard, 
     )
 
+@Client.on_message(
+    command(["/start"]) & filters.group & ~filters.edited
+)
+async def uott(client: Client, message: Message):
+
+    keyboard = reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("اضفني الي مجموعتك", url=f"https://t.me/{me_bot.username}?startgroup=true")
+                ],[
+                    InlineKeyboardButton("طريقه التشغيل", callback_data="user_guide")
+                ],[
+                    InlineKeyboardButton("اوامر البوت", callback_data="command_list"),
+                    InlineKeyboardButton("مطور البوت", url=f"https://t.me/{OWNER_USERNAME}")                    
+                ],
+            ]
+        )
+
+    start = f"""⌯ مرحبا {message.from_user.mention()} ،\n
+⌯ انا بوت بمميزات متعدده لتشغيل الاغاني في المجموعات
+
+⌯ Ch : [Source Nova](http://t.me/TmNova)
+""",
+
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/f331ef20db2d7f5469360.jpg",
+        caption=start,
+        reply_markup=keyboard, 
+    )
+
 @Client.on_message(command(["نج", "لبنج", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 @check_blacklist()
 async def ping_pong(c: Client, message: Message):
