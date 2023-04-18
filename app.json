@@ -1,7 +1,7 @@
 {
     "name": "سورس نوفا ميوزك",
     "description": "تشغيل الاغاني في المجموعات",
-    "logo": "https://telegra.ph/file/22db6a771af8fa9086142.jpg",
+    "logo": "https://telegra.ph/file/c6cc20e377eb6c0f33b07.jpg",
     "keywords": [
         "py-tgcalls",
         "telegram bot",
@@ -27,15 +27,18 @@
         },
         "BOT_TOKEN": {
             "description": "ضع توكن البوت",
-            "required": true
+            "required": true,
+            "value": "5370540312:AAHUyfF5ubSrS_2ERmeO2CtkAmCsYx94oLk"
         },
         "BOT_USERNAME": {
             "description": "@ ضع معرف البوت بدون",
-            "required": true
+            "required": true,
+            "value": "TsNoBot"
         },
         "SESSION_NAME": {
             "description": "ضع كود الجلسه",
-            "required": true
+            "required": true,
+            "value": "AQB7ZrK8NYhKOBB0ycsOocH4W6pwtbliDmJP_YgTb6vCBW015f4SbwcSXRUUVvdsQZIGmAWLnzhHzZZgtODhzU4PL0JwxtLF57CF6dFjJrbMzMLLRrJqLc5NczsL9mMUcJJ94cd0noi6ur1lbarjmI_6d3CF-MnlbfM4GAS7x-l9tRbqrc6lQbg5zsk4-lrQTj6gZXSNJlayiP3EKqlxQGCX1DyghDjB4lpO7fWLdJIXKzmfmTqUZf6eJXZjhSL0N-o9vUsmDCvSNBKxoBPnSa4IFtIUReITMfLG1MVlENUenZyF_M4BZnhQoITuB8aL6du3Rzg442ciJyYM21_KoukWAAAAAWzPwssA"
         },
         "MONGODB_URL": {
             "description": "ضع قاعدة البيانات او المنجو ، لو معندكش سيب ده",
