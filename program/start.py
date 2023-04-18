@@ -168,7 +168,7 @@ async def uott(client: Client, message: Message):
             ]
         )
 
-    start = f"⌯ مرحبا {message.from_user.mention()} \n⌯ انا بوت نوفا ميوزك لتشغيل الاغاني في المجموعات\n⌯ Ch : [Source Nova](http://t.me/TmNova)"
+    start = f"⌯ مرحبا {message.from_user.mention()} \n\n⌯ انا بوت نوفا ميوزك لتشغيل الاغاني في المجموعات\n\n⌯ Ch : [Source Nova](http://t.me/TmNova)"
 
     await message.reply_photo(
         photo=f"https://telegra.ph/file/c6cc20e377eb6c0f33b07.jpg",
