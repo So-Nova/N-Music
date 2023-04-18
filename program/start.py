@@ -197,6 +197,28 @@ async def uott(client: Client, message: Message):
         reply_markup=keyboard, 
     )
 
+@Client.on_message(
+    command(["لبوت","وت"]) & filters.group & ~filters.edited
+)
+async def uott(client: Client, message: Message):
+
+    keyboard = reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("𖥻 Nova , Music .", url=f"https://t.me/TsNoBot"),
+                        ]
+                    ]
+                )
+
+    Bot = f"[⌯ نعم يقلب البوت 🥰](https://t.me/TsNoBot)"
+
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/c6cc20e377eb6c0f33b07.jpg",
+        caption=Bot,
+        reply_markup=keyboard, 
+    )
+
+
 @Client.on_message(command(["نج", "لبنج", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 @check_blacklist()
 async def ping_pong(c: Client, message: Message):
