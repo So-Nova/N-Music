@@ -151,7 +151,7 @@ async def uott(client: Client, message: Message):
     )
 
 @Client.on_message(
-    command(["/start"]) & filters.group & ~filters.edited
+    command(["/start"]) & filters.private & ~filters.edited
 )
 async def uott(client: Client, message: Message):
 
