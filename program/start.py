@@ -168,53 +168,11 @@ async def uott(client: Client, message: Message):
             ]
         )
 
-    start = f"⌯ مرحبا {message.from_user.mention()}\n⌯ انا بوت نوفا ميوزك لتشغيل الاغاني في المجموعات\n⌯ Ch : [Source Nova](http://t.me/TmNova)"
+    start = f"⌯ مرحبا {message.from_user.mention()} \n⌯ انا بوت نوفا ميوزك لتشغيل الاغاني في المجموعات\n⌯ Ch : [Source Nova](http://t.me/TmNova)"
 
     await message.reply_photo(
         photo=f"https://telegra.ph/file/c6cc20e377eb6c0f33b07.jpg",
         caption=start,
-        reply_markup=keyboard, 
-    )
-
-@Client.on_message(
-    command(["وفا"]) & filters.group & ~filters.edited
-)
-async def uott(client: Client, message: Message):
-
-    keyboard = reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton("𖥻 Nova , Music .", url=f"https://t.me/TsNoBot"),
-                        ]
-                    ]
-                )
-
-    Bot = f"[⌯ ايوا يروح قلب نوفا من جوه 🥹](https://t.me/TsNoBot)"
-
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/c6cc20e377eb6c0f33b07.jpg",
-        caption=Bot,
-        reply_markup=keyboard, 
-    )
-
-@Client.on_message(
-    command(["لبوت","وت"]) & filters.group & ~filters.edited
-)
-async def uott(client: Client, message: Message):
-
-    keyboard = reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton("𖥻 Nova , Music .", url=f"https://t.me/TsNoBot"),
-                        ]
-                    ]
-                )
-
-    Bot = f"[⌯ نعم يقلب البوت 🥰](https://t.me/TsNoBot)"
-
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/c6cc20e377eb6c0f33b07.jpg",
-        caption=Bot,
         reply_markup=keyboard, 
     )
 
