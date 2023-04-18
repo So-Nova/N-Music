@@ -77,7 +77,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["ستارت", f"start@{BOT_USERNAME}","start"]) & filters.private & ~filters.edited
+    command(["ستارت"]) & filters.private & ~filters.edited
 )
 @check_blacklist()
 async def start_(c: Client, message: Message):
@@ -151,7 +151,7 @@ async def uott(client: Client, message: Message):
     )
 
 @Client.on_message(
-    command(["/start"]) & filters.private & ~filters.edited
+    command(["start"]) & filters.private & ~filters.edited
 )
 async def uott(client: Client, message: Message):
 
@@ -168,14 +168,10 @@ async def uott(client: Client, message: Message):
             ]
         )
 
-    start = f"""⌯ مرحبا {message.from_user.mention()} ،\n
-⌯ انا بوت بمميزات متعدده لتشغيل الاغاني في المجموعات
-
-⌯ Ch : [Source Nova](http://t.me/TmNova)
-""",
+    start = f"⌯ مرحبا {message.from_user.mention()} \n ⌯ انا بوت نوفا ميوزك لتشغيل الاغاني في المجموعات \n ⌯ Ch : [Source Nova](http://t.me/TmNova)"
 
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/f331ef20db2d7f5469360.jpg",
+        photo=f"https://telegra.ph/file/c6cc20e377eb6c0f33b07.jpg",
         caption=start,
         reply_markup=keyboard, 
     )
