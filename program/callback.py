@@ -41,6 +41,7 @@ async def start_set(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""⌯ مرحبا [{query.message.chat.first_name}](tg://user?id={query.message.chat.id})\n
 ⌯ انا بوت نوفا ميوزك لتشغيل الاغاني في المجموعات
+
 ⌯ Ch : [Source Nova](http://t.me/TmNova)
 """,
         reply_markup=InlineKeyboardMarkup(
