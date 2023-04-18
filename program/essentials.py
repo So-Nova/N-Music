@@ -152,7 +152,7 @@ async def bot_statistic(c: Client, message: Message):
     served_users = len(await get_served_users())
     gbans_usertl = await get_gbans_count()
     tgm = f"""
-⌯ احصائيات البوت : [{name}](https://t.me/{uname})`:`
+⌯ احصائيات البوت : [{name}](https://t.me/{uname})
 
 ⌯  **عدد المجموعات** : `{served_chats}`
 ⌯ **عدد المستخدمين** : `{served_users}`"""
