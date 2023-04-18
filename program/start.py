@@ -84,7 +84,7 @@ async def start_(c: Client, message: Message):
     user_id = message.from_user.id
     await add_served_user(user_id)
     await message.reply_text(
-        f"""⌯ مرحبا {message.from_user.mention()} ،\n
+        f"""⌯ مرحبا {message.from_user.mention()} \n
 ⌯ انا بوت بمميزات متعدده لتشغيل الاغاني في المجموعات
 
 ⌯ Ch : [Source Nova](http://t.me/TmNova)
