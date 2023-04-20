@@ -77,33 +77,25 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["ستارت"]) & filters.private & ~filters.edited
+    command(["برمج السورس", f"dev" ,"طور", "برمج ", "لمبرمج","لمطور"]) & filters.group & ~filters.edited
 )
-@check_blacklist()
-async def start_(c: Client, message: Message):
-    user_id = message.from_user.id
-    await add_served_user(user_id)
-    await message.reply_text(
-        f"""⌯ مرحبا {message.from_user.mention()} \n
-⌯ انا بوت نوفا ميوزك لتشغيل الاغاني في المجموعات
+async def uott(client: Client, message: Message):
 
-⌯ Ch : [Source Nova](http://t.me/TmNova)
-""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("اضفني الي مجموعتك", url=f"https://t.me/{me_bot.username}?startgroup=true")
-                ],[
-                    InlineKeyboardButton("طريقه التشغيل", callback_data="user_guide")
-                ],[
-                    InlineKeyboardButton("اوامر البوت", callback_data="command_list"),
-                    InlineKeyboardButton("مطور البوت", url=f"https://t.me/{OWNER_USERNAME}")                    
-                ],
-            ]
-        ),
-        disable_web_page_preview=True,
+    keyboard = reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("𖥻 UR , FaV MoHaMeD .", url=f"https://t.me/YeYeYc"),
+                        ]
+                    ]
+                )
+
+    developer = f"⌯ اهلا بك انت الان في قائمه مبرمج السورس لـ التواصل عليك التحكم بالقائمه بالاسفل ↡"
+
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/f331ef20db2d7f5469360.jpg",
+        caption=developer,
+        reply_markup=keyboard, 
     )
-
 
 @Client.on_message(
     command(["وامر الاغاني","وامر نوفا", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
@@ -127,27 +119,6 @@ async def alive(c: Client, message: Message):
         photo=f"https://telegra.ph/file/c6cc20e377eb6c0f33b07.jpg",
         caption=text,
         reply_markup=buttons,
-    )
-
-@Client.on_message(
-    command(["برمج السورس", f"dev" ,"طور", "برمج ", "لمبرمج","لمطور"]) & filters.group & ~filters.edited
-)
-async def uott(client: Client, message: Message):
-
-    keyboard = reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton("𖥻 UR , FaV MoHaMeD .", url=f"https://t.me/YeYeYc"),
-                        ]
-                    ]
-                )
-
-    developer = f"⌯ اهلا بك انت الان في قائمه مبرمج السورس لـ التواصل عليك التحكم بالقائمه بالاسفل ↡"
-
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/f331ef20db2d7f5469360.jpg",
-        caption=developer,
-        reply_markup=keyboard, 
     )
 
 @Client.on_message(
